@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import PostCard from "./PostCard";
 import { GlobalContext } from "../context/GlobalState";
 import UserFollowButton from "./UserFollowButton";
@@ -12,7 +12,7 @@ function Profile() {
     const { users, posts } = state;
 
     const profileUser = users.find(u => u.id === userId);
-    const currentUser = state.users[0]; // Assuming the first user is the logged-in user
+    
 
     if (!profileUser) {
         return <div>User not found</div>;
@@ -23,12 +23,14 @@ function Profile() {
         <div className="p-4">
             <div className="bg-white shadow-md rounded-lg p-4 mb-4">
                 <h2 className="text-2xl font-bold">{profileUser.name}'s Profile
+                    <Link to="/editProfile" className="edit-profile-link ml-4 text-sm text-blue-500 hover:underline">Edit Profile</Link>
                     <span className="profile-follow-button small">
                         <UserFollowButton userId={profileUser.id} />
                     </span>
                 </h2>
                 <p className="text-gray-600">@{profileUser.username}</p>
                 <p className="mt-2 text-gray-800">{profileUser.bio}</p>
+                <p className="mt-2 text-gray-800">Posts: {userPosts?.length || 0}</p>
                 <p className="text-sm text-blue-500 font-medium">{profileUser.followers.length} Followers</p>
                 <p className="text-sm text-blue-500 font-medium">{profileUser.following.length} Following</p>
             </div>

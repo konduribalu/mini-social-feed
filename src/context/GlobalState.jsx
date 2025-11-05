@@ -5,6 +5,8 @@ import axios from "axios";
 const initialState = {
     users: [],
     posts: [],
+    searchText: "",
+    filterType: "all",
     loading: true,
     error: null
 };
@@ -106,6 +108,27 @@ function reducer(state, action) {
                 ),
             };
 
+        case 'SET_SEARCH_TEXT':
+            return {
+                ...state,
+                searchText: action.payload.searchText,
+            };
+        
+        case 'SET_FILTER_TYPE':
+            return {
+                ...state,
+                filterType: action.payload.filterType,
+            };
+        
+        case 'UPDATE_USER':
+            return {
+                ...state,   
+                users: state.users.map(user =>
+                    user.id === action.payload.id
+                        ? { ...user, ...action.payload.user }
+                        : user
+                ),
+            };
         default:
             return state;
     }

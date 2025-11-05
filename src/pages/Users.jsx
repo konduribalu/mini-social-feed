@@ -4,10 +4,17 @@ import { GlobalContext } from '../context/GlobalState';
 
 function Users() {
   const { state } = React.useContext(GlobalContext);
+  const searchText = state.searchText || "";
+
+  const filteredUsers = searchText
+    ? state.users.filter(user =>
+        user.name.toLowerCase().includes(searchText.toLowerCase())
+      )
+    : state.users;
 
   return (<div>
     <h1>Users</h1>
-    {state.users.map(user => (
+    {filteredUsers.map(user => (
       <UserCard key={user.id} user={user} />
     ))}
   </div>

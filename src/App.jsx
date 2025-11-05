@@ -5,8 +5,10 @@ import Users from './pages/Users';
 import Notification from './pages/Notification';
 import Profile from './components/Profile';
 import Nav from './components/Nav';
+import EditProfile from './components/EditProfile';
 
 function App() {
+
   return (
     <Router>
       <div className="min-h-screen bg-gray-50">
@@ -17,6 +19,7 @@ function App() {
             <Route path="/users" element={<Users />} />
             <Route path="/profile/:userId" element={<Profile />} />
             <Route path="/notifications" element={<Notification />} />
+            <Route path="/editProfile" element={<EditProfile />} />
           </Routes>
         </div>
       </div>

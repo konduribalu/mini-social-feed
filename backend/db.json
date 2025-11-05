@@ -4,14 +4,16 @@
       "id": "1",
       "name": "Alice Johnson",
       "username": "alice_j",
-      "bio": "Frontend Developer | React Enthusiast | Coffee Lover ☕",
+      "bio": "Full Stack and Frontend Developer | React Enthusiast | Coffee Lover ☕",
+      "avatar": "https://i.pravatar.cc/150?img=1",
       "followers": [
         "2",
         "4"
       ],
       "following": [
         "5",
-        "2"
+        "2",
+        "4"
       ]
     },
     {
@@ -19,6 +21,7 @@
       "name": "Bob Smith",
       "username": "bob_codes",
       "bio": "Full Stack Developer | Node.js Expert | Tech Blogger",
+      "avatar": "https://i.pravatar.cc/150?img=2",
       "followers": [
         "3",
         "5",
@@ -34,6 +37,7 @@
       "name": "Charlie Brown",
       "username": "charlie_b",
       "bio": "UI/UX Designer | Creative Thinker | Design Systems Advocate",
+      "avatar": "https://i.pravatar.cc/150?img=3",
       "followers": [
         "2"
       ],
@@ -49,8 +53,10 @@
       "name": "Diana Prince",
       "username": "diana_dev",
       "bio": "DevOps Engineer | Cloud Architecture | Kubernetes Ninja",
+      "avatar": "https://i.pravatar.cc/150?img=4",
       "followers": [
-        "3"
+        "3",
+        "1"
       ],
       "following": [
         "2",
@@ -62,6 +68,7 @@
       "name": "Ethan Hunt",
       "username": "ethan_h",
       "bio": "Mobile App Developer | React Native | iOS & Android",
+      "avatar": "https://i.pravatar.cc/150?img=5",
       "followers": [
         "2",
         "4"
@@ -70,6 +77,33 @@
         "1",
         "3"
       ]
+    },
+    {
+      "id": "6",
+      "name": "Sarah Wilson",
+      "username": "sarah_codes",
+      "bio": "Backend Engineer | Python & Go Enthusiast | Microservices Architect",
+      "avatar": "https://i.pravatar.cc/150?img=6",
+      "followers": [],
+      "following": []
+    },
+    {
+      "id": "7",
+      "name": "Mike Chen",
+      "username": "mike_data",
+      "bio": "Data Scientist | Machine Learning | AI Research | Python Expert",
+      "avatar": "https://i.pravatar.cc/150?img=7",
+      "followers": [],
+      "following": []
+    },
+    {
+      "id": "8",
+      "name": "Emma Rodriguez",
+      "username": "emma_security",
+      "bio": "Cybersecurity Engineer | Ethical Hacker | Security Auditor",
+      "avatar": "https://i.pravatar.cc/150?img=8",
+      "followers": [],
+      "following": []
     }
   ],
   "posts": [
@@ -436,6 +470,407 @@
           ]
         }
       ]
+    },
+    {
+      "id": "11",
+      "userId": "1",
+      "content": "Debugging React components just got easier! 🐛 The new React DevTools features are incredible. The component tree visualization and state tracking help me find bugs in minutes instead of hours.",
+      "likes": 14,
+      "comments": [
+        {
+          "text": "React DevTools is a lifesaver! Which feature do you use most?",
+          "replies": [],
+          "id": "36",
+          "userId": "2",
+          "timestamp": "2025-11-05T21:00:00Z"
+        },
+        {
+          "text": "The profiler helped me optimize my app's performance significantly",
+          "replies": [],
+          "id": "37",
+          "userId": "3",
+          "timestamp": "2025-11-05T21:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "userId": "2",
+      "content": "GraphQL + Apollo Client = Developer Happiness! 🚀 Just migrated from REST to GraphQL and the difference is night and day. No more over-fetching data!",
+      "likes": 22,
+      "comments": [
+        {
+          "text": "How was the migration process? Any gotchas?",
+          "replies": [],
+          "id": "38",
+          "userId": "4",
+          "timestamp": "2025-11-05T22:00:00Z"
+        },
+        {
+          "text": "GraphQL subscriptions for real-time data are amazing!",
+          "replies": [],
+          "id": "39",
+          "userId": "5",
+          "timestamp": "2025-11-05T22:15:00Z"
+        },
+        {
+          "text": "Apollo cache management is so elegant compared to Redux",
+          "replies": [],
+          "id": "40",
+          "userId": "1",
+          "timestamp": "2025-11-05T22:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "userId": "3",
+      "content": "CSS Grid + Flexbox = Layout Superpowers! 💪 Finally mastered both and now I can create any layout without floats or positioning hacks. Modern CSS is beautiful!",
+      "likes": 16,
+      "comments": [
+        {
+          "text": "Grid for 2D layouts, Flexbox for 1D - perfect combo!",
+          "replies": [],
+          "id": "41",
+          "userId": "2",
+          "timestamp": "2025-11-05T23:00:00Z"
+        },
+        {
+          "text": "CSS Grid changed my life! No more Bootstrap grid system needed",
+          "replies": [],
+          "id": "42",
+          "userId": "4",
+          "timestamp": "2025-11-05T23:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "userId": "4",
+      "content": "Monitoring microservices with Prometheus + Grafana 📊 Set up comprehensive dashboards for our 15+ services. Now we catch issues before users even notice them!",
+      "likes": 19,
+      "comments": [
+        {
+          "text": "Prometheus is incredibly powerful for metrics collection",
+          "replies": [],
+          "id": "43",
+          "userId": "1",
+          "timestamp": "2025-11-06T00:00:00Z"
+        },
+        {
+          "text": "What alerting rules do you recommend for microservices?",
+          "replies": [],
+          "id": "44",
+          "userId": "3",
+          "timestamp": "2025-11-06T00:15:00Z"
+        },
+        {
+          "text": "Grafana dashboards are so satisfying to look at 📈",
+          "replies": [],
+          "id": "45",
+          "userId": "5",
+          "timestamp": "2025-11-06T00:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "userId": "5",
+      "content": "Flutter vs React Native debate? Why not both! 🤔 Built the same app in both frameworks. Each has its strengths. Flutter for performance, RN for ecosystem and familiarity.",
+      "likes": 25,
+      "comments": [
+        {
+          "text": "Great comparison! Which one would you choose for your next project?",
+          "replies": [],
+          "id": "46",
+          "userId": "2",
+          "timestamp": "2025-11-06T01:00:00Z"
+        },
+        {
+          "text": "Flutter's hot reload is incredibly fast for development",
+          "replies": [],
+          "id": "47",
+          "userId": "4",
+          "timestamp": "2025-11-06T01:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "userId": "1",
+      "content": "TypeScript adoption in our team: 100% success! 🎯 No more 'undefined is not a function' errors. The initial learning curve was worth it for the type safety and better IDE support.",
+      "likes": 31,
+      "comments": [
+        {
+          "text": "TypeScript literally saves hours of debugging time",
+          "replies": [],
+          "id": "48",
+          "userId": "3",
+          "timestamp": "2025-11-06T02:00:00Z"
+        },
+        {
+          "text": "The intellisense in VS Code with TS is chef's kiss 👨‍🍳💋",
+          "replies": [],
+          "id": "49",
+          "userId": "5",
+          "timestamp": "2025-11-06T02:15:00Z"
+        },
+        {
+          "text": "Gradual adoption or all at once? How did you manage the migration?",
+          "replies": [],
+          "id": "50",
+          "userId": "2",
+          "timestamp": "2025-11-06T02:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "userId": "2",
+      "content": "WebAssembly is the future! 🚀 Just compiled a Rust algorithm to WASM and it's 10x faster than the JavaScript version. The web platform keeps getting more powerful!",
+      "likes": 18,
+      "comments": [
+        {
+          "text": "WASM for compute-heavy tasks is a game changer",
+          "replies": [],
+          "id": "51",
+          "userId": "4",
+          "timestamp": "2025-11-06T03:00:00Z"
+        },
+        {
+          "text": "How's the developer experience with Rust + WASM?",
+          "replies": [],
+          "id": "52",
+          "userId": "1",
+          "timestamp": "2025-11-06T03:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "userId": "3",
+      "content": "Accessibility-first design is not optional! ♿ Just finished an audit of our app and improved keyboard navigation, screen reader support, and color contrast. Everyone deserves great UX!",
+      "likes": 28,
+      "comments": [
+        {
+          "text": "Thank you for prioritizing accessibility! It's often overlooked",
+          "replies": [],
+          "id": "53",
+          "userId": "5",
+          "timestamp": "2025-11-06T04:00:00Z"
+        },
+        {
+          "text": "What tools do you recommend for accessibility testing?",
+          "replies": [],
+          "id": "54",
+          "userId": "2",
+          "timestamp": "2025-11-06T04:15:00Z"
+        },
+        {
+          "text": "WCAG guidelines should be every designer's best friend",
+          "replies": [],
+          "id": "55",
+          "userId": "4",
+          "timestamp": "2025-11-06T04:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "userId": "4",
+      "content": "Infrastructure as Code with Terraform 🏗️ Deployed 50+ AWS resources with a single command. Version control for infrastructure is a beautiful thing. No more manual console clicking!",
+      "likes": 21,
+      "comments": [
+        {
+          "text": "Terraform modules make infrastructure so reusable",
+          "replies": [],
+          "id": "56",
+          "userId": "1",
+          "timestamp": "2025-11-06T05:00:00Z"
+        },
+        {
+          "text": "How do you handle state management across multiple environments?",
+          "replies": [],
+          "id": "57",
+          "userId": "3",
+          "timestamp": "2025-11-06T05:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "userId": "5",
+      "content": "Just discovered React Suspense for data fetching! 🌟 The loading states are so much cleaner now. No more loading spinners scattered throughout components. Declarative loading FTW!",
+      "likes": 17,
+      "comments": [
+        {
+          "text": "Suspense + Error Boundaries = Perfect loading states",
+          "replies": [],
+          "id": "58",
+          "userId": "2",
+          "timestamp": "2025-11-06T06:00:00Z"
+        },
+        {
+          "text": "Can't wait for Suspense to be stable for data fetching",
+          "replies": [],
+          "id": "59",
+          "userId": "4",
+          "timestamp": "2025-11-06T06:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "userId": "6",
+      "content": "Building scalable APIs with FastAPI and Python! 🐍 The automatic documentation generation and type hints make development so smooth. Performance is incredible too!",
+      "likes": 23,
+      "comments": [
+        {
+          "text": "FastAPI is a game changer! How does it compare to Django REST?",
+          "replies": [],
+          "id": "60",
+          "userId": "2",
+          "timestamp": "2025-11-06T07:00:00Z"
+        },
+        {
+          "text": "The async support in FastAPI is phenomenal for high-traffic APIs",
+          "replies": [],
+          "id": "61",
+          "userId": "4",
+          "timestamp": "2025-11-06T07:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "userId": "7",
+      "content": "Machine Learning model deployment made easy! 🤖 Just containerized a TensorFlow model with Docker and deployed it on Kubernetes. MLOps is becoming mainstream!",
+      "likes": 35,
+      "comments": [
+        {
+          "text": "MLOps is so important but often overlooked. Great work!",
+          "replies": [],
+          "id": "62",
+          "userId": "1",
+          "timestamp": "2025-11-06T08:00:00Z"
+        },
+        {
+          "text": "Which tools do you recommend for model versioning?",
+          "replies": [],
+          "id": "63",
+          "userId": "3",
+          "timestamp": "2025-11-06T08:15:00Z"
+        },
+        {
+          "text": "Kubernetes for ML workloads is powerful but complex",
+          "replies": [],
+          "id": "64",
+          "userId": "5",
+          "timestamp": "2025-11-06T08:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "userId": "8",
+      "content": "Cybersecurity in the age of AI 🔒 Just completed a security audit using automated vulnerability scanners. The threat landscape is evolving fast - we need to stay ahead!",
+      "likes": 29,
+      "comments": [
+        {
+          "text": "Security should be built into every stage of development",
+          "replies": [],
+          "id": "65",
+          "userId": "2",
+          "timestamp": "2025-11-06T09:00:00Z"
+        },
+        {
+          "text": "What are the most critical vulnerabilities you're seeing today?",
+          "replies": [],
+          "id": "66",
+          "userId": "4",
+          "timestamp": "2025-11-06T09:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "userId": "6",
+      "content": "Microservices architecture lessons learned 📐 After 2 years of microservices, here's my advice: Start with a monolith, extract services when you have clear boundaries. Don't over-engineer early!",
+      "likes": 42,
+      "comments": [
+        {
+          "text": "This! Microservices complexity is often underestimated",
+          "replies": [],
+          "id": "67",
+          "userId": "1",
+          "timestamp": "2025-11-06T10:00:00Z"
+        },
+        {
+          "text": "Domain-driven design helps identify service boundaries",
+          "replies": [],
+          "id": "68",
+          "userId": "3",
+          "timestamp": "2025-11-06T10:15:00Z"
+        },
+        {
+          "text": "Monitoring becomes crucial with distributed systems",
+          "replies": [],
+          "id": "69",
+          "userId": "4",
+          "timestamp": "2025-11-06T10:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "userId": "7",
+      "content": "Data pipeline automation with Apache Airflow! 🌊 Orchestrating complex ETL workflows has never been easier. The DAG visualization helps the whole team understand data flow.",
+      "likes": 26,
+      "comments": [
+        {
+          "text": "Airflow DAGs are so much better than cron jobs for complex workflows",
+          "replies": [],
+          "id": "70",
+          "userId": "5",
+          "timestamp": "2025-11-06T11:00:00Z"
+        },
+        {
+          "text": "How do you handle data quality monitoring in your pipelines?",
+          "replies": [],
+          "id": "71",
+          "userId": "2",
+          "timestamp": "2025-11-06T11:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "userId": "8",
+      "content": "Zero-trust security implementation 🛡️ Migrated our entire infrastructure to zero-trust principles. Every request is verified, every user authenticated. Security by design, not as an afterthought!",
+      "likes": 33,
+      "comments": [
+        {
+          "text": "Zero-trust is the future of enterprise security",
+          "replies": [],
+          "id": "72",
+          "userId": "1",
+          "timestamp": "2025-11-06T12:00:00Z"
+        },
+        {
+          "text": "How did you handle the cultural change management aspect?",
+          "replies": [],
+          "id": "73",
+          "userId": "3",
+          "timestamp": "2025-11-06T12:15:00Z"
+        },
+        {
+          "text": "Identity and access management becomes critical in zero-trust",
+          "replies": [],
+          "id": "74",
+          "userId": "4",
+          "timestamp": "2025-11-06T12:30:00Z"
+        }
+      ]
     }
   ],
   "notifications": [
@@ -542,6 +977,27 @@
       "userId": "2",
       "message": "Alice Johnson liked your post",
       "timestamp": "2025-11-04T21:58:39.090Z",
+      "read": false
+    },
+    {
+      "id": "5181",
+      "userId": "4",
+      "message": "Alice Johnson has followed you",
+      "timestamp": "2025-11-05T01:19:58.399Z",
+      "read": false
+    },
+    {
+      "id": "5a86",
+      "userId": "4",
+      "message": "Alice Johnson has unfollowed you",
+      "timestamp": "2025-11-05T12:46:55.644Z",
+      "read": false
+    },
+    {
+      "id": "43c8",
+      "userId": "4",
+      "message": "Alice Johnson has followed you",
+      "timestamp": "2025-11-05T12:46:56.722Z",
       "read": false
     }
   ]

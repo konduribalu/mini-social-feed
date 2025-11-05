@@ -5,6 +5,7 @@ import UserFollowButton from "./UserFollowButton";
 import axios from "axios";
 import { useNotifications } from "../context/NotificationContext";
 import CommentsReplies from "./CommentsReplies";
+import { timeAgo } from "../utils/time";
 
 function PostCard({ post }) {
     const { state, dispatch } = React.useContext(GlobalContext);
@@ -97,8 +98,8 @@ function PostCard({ post }) {
 
     return (
 
-        <div className="bg-white shadow-md rounded-lg p-4 mb-4">
-            <h4 className="font-semibold text-gray-800">
+        <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 shadow-md rounded-lg p-4 mb-4">
+            <h4 className="font-semibold text-gray-800 dark:text-gray-200">
                 {user ? user.name : 'Unknown User'}
                 <span className="user-follow-button">
                     <UserFollowButton userId={user?.id} />
@@ -157,6 +158,7 @@ function PostCard({ post }) {
                     <span className="text-sm text-gray-500 font-bold">
                         {currentPost.comments.length}
                     </span> Comments
+                    
                     {currentPost.comments && currentPost.comments.length > 0 ? (
                         currentPost.comments.map((comment, index) => (
                             <div key={index} className="border-b py-1 pl-2">
