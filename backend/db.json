@@ -111,7 +111,7 @@
       "id": "1",
       "userId": "1",
       "content": "Just shipped my first React component library! 🚀 It includes custom hooks, styled components, and TypeScript support. Check it out on npm!",
-      "likes": 12,
+      "likes": 18,
       "comments": [
         {
           "id": 1762294170094,
@@ -998,6 +998,20 @@
       "userId": "4",
       "message": "Alice Johnson has followed you",
       "timestamp": "2025-11-05T12:46:56.722Z",
+      "read": false
+    },
+    {
+      "id": "216c",
+      "userId": "6",
+      "message": "Alice Johnson has followed you",
+      "timestamp": "2025-11-05T18:59:40.135Z",
+      "read": false
+    },
+    {
+      "id": "36e7",
+      "userId": "6",
+      "message": "Alice Johnson has unfollowed you",
+      "timestamp": "2025-11-05T18:59:41.064Z",
       "read": false
     }
   ]

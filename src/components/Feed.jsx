@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, lazy, Suspense } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import PostCard from "./PostCard";
 import { motion } from "framer-motion";
+
+const PostCard = lazy(() => import("./PostCard"));
 
 const POSTS_PER_PAGE = 5;
 function Feed() {
@@ -72,7 +73,9 @@ function Feed() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}>
-                    <PostCard post={post} />
+                        <Suspense fallback={<div>Loading post...</div>} key={post.id}>
+                            <PostCard post={post} />
+                        </Suspense>
                 </motion.div>
             ))}
             {visibleFollowedPosts.length === sortedFilteredFeedPosts.length 

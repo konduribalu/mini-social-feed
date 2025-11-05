@@ -20,8 +20,8 @@ function Profile() {
     const userPosts = posts.filter(post => post.userId === profileUser.id);
 
     return (
-        <div className="p-4">
-            <div className="bg-white shadow-md rounded-lg p-4 mb-4">
+        <div className="p-4 mx-auto space-y-6">
+            <div className="bg-white shadow-md rounded-lg p-4 mb-4 space-y-6">
                 <h2 className="text-2xl font-bold">{profileUser.name}'s Profile
                     <Link to="/editProfile" className="edit-profile-link ml-4 text-sm text-blue-500 hover:underline">Edit Profile</Link>
                     <span className="profile-follow-button small">

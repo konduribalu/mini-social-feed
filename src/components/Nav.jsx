@@ -23,7 +23,7 @@ function Nav() {
     return (
         <nav className="bg-blue-600 text-white p-4 flex justify-between">
             <h1 className="font-bold text-lg">Mini Social Feed</h1>
-            <button className="bg-blue-500 text-white px-3 py-1 rounded" onClick={toggleTheme}>
+            <button className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded" onClick={toggleTheme}>
                 {theme === "light" ? "🌙 Dark" : "☀️ Light"}</button>
             <div className="md:col-span-2">
                 <input type="text"

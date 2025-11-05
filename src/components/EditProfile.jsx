@@ -40,7 +40,7 @@ function EditProfile() {
                     <label className="block text-sm font-medium mb-1">Bio</label>
                     <textarea name="bio" value={formValues.bio} onChange={handleProfileUpdate} className="w-full border rounded px-2 py-1" />
                 </div>
-                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Save Changes</button>
+                <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Save Changes</button>
             </form>
         </div>
     );

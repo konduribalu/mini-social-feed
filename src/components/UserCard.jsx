@@ -1,10 +1,9 @@
-import React from "react";
+import React, {memo} from "react";
 import UserFollowButton from "./UserFollowButton";
 import { Link } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalState";
-
-function UserCard({ user }) {
     
+const UserCard = ({ user }) => { // Avoids unrelated re-renders
     const {state} = React.useContext(GlobalContext);
     const currentUser = state.users[0]; // Assuming the first user is the logged-in user
     if(user.id === currentUser.id) return null;

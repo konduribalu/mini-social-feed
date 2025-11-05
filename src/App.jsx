@@ -22,6 +22,9 @@ function App() {
             <Route path="/editProfile" element={<EditProfile />} />
           </Routes>
         </div>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded"
+        onClick={() => window.scrollTo({top: 0, behavior:'smooth'})}>
+          Back To Top</button>
       </div>
     </Router>
   );

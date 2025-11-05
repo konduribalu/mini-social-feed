@@ -57,7 +57,7 @@ function CommentsReplies({ postId, comments }) {
                     <p className="text-gray-700">
                         <strong>User {comment.userId}</strong>: {comment.text}
                     </p>
-                    <button className="text-blue-500 text-xs mt-1"
+                    <button className="text-blue-500 text-xs mt-1 hover:bg-blue-600"
                         onClick={() => setActiveComment(activeComment === comment.id ? null : comment.id)}>Reply</button>
                     {activeComment === comment?.id && (
                         <div className="mt-2">
@@ -66,7 +66,7 @@ function CommentsReplies({ postId, comments }) {
                                 value={replyText}
                                 onChange={(e) => setReplyText(e.target.value)}
                             />
-                            <button className="ml-2 bg-blue-500 text-white text-xs px-2 py-1 rounded"
+                            <button className="ml-2 bg-blue-500 text-white text-xs px-2 py-1 rounded hover:bg-blue-600"
                                 onClick={() => {
                                     handleReply(comment.id);
                                 }}>

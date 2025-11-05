@@ -6,6 +6,7 @@ import axios from "axios";
 import { useNotifications } from "../context/NotificationContext";
 import CommentsReplies from "./CommentsReplies";
 import { timeAgo } from "../utils/time";
+import { Link } from "react-router-dom";
 
 function PostCard({ post }) {
     const { state, dispatch } = React.useContext(GlobalContext);
@@ -100,7 +101,7 @@ function PostCard({ post }) {
 
         <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 shadow-md rounded-lg p-4 mb-4">
             <h4 className="font-semibold text-gray-800 dark:text-gray-200">
-                {user ? user.name : 'Unknown User'}
+                <Link to={`/profile/${user?.id}`} className="hover:underline">{user ? user.name : 'Unknown User'}</Link>
                 <span className="user-follow-button">
                     <UserFollowButton userId={user?.id} />
                 </span>
@@ -109,7 +110,7 @@ function PostCard({ post }) {
             <div className="flex items-center justify-between mt-2">
                 <p className="text-sm text-red-500">❤️ {currentPost?.likes || 0} Likes</p>
                 <button
-                    className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600"
+                    className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-600"
                     onClick={handleLike}>
                     Like
                 </button>
@@ -146,7 +147,7 @@ function PostCard({ post }) {
                             </button>
                             <button
                                 type="button"
-                                className="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600"
+                                className="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded"
                                 onClick={() => handleEdit(post.id)}
                             >
                                 Edit

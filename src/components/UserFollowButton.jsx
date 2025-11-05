@@ -58,7 +58,7 @@ function UserFollowButton({ userId }) {
     return (
         <button
             onClick={handleFollowToggle}
-            className={`px-4 py-2 rounded ${isFollowing ? "bg-red-500 text-white" : "bg-blue-500 text-white"}`}
+            className={`px-4 py-2 rounded ${isFollowing ? "bg-red-500 text-white hover:bg-red-600" : "bg-blue-500 text-white hover:bg-blue-600"}`}
         >
             {isFollowing ? "Unfollow" : "Follow"}
         </button>
