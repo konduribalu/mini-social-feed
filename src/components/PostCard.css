@@ -1,0 +1,47 @@
+.post-card {
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 12px 0;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: #d1d9e0;
+}
+
+.post-card h3 {
+  margin: 0 0 12px 0;
+  color: #1da1f2;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.post-card p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.post-card p:nth-child(2) {
+  color: #14171a;
+  font-size: 1em;
+  margin-bottom: 12px;
+}
+
+.post-card p:last-child {
+  color: #657786;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #f7f9fa;
+}
+
+.user-follow-button {
+  margin-left: 0.5rem;
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,548 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Alice Johnson",
+      "username": "alice_j",
+      "bio": "Frontend Developer | React Enthusiast | Coffee Lover ☕",
+      "followers": [
+        "2",
+        "4"
+      ],
+      "following": [
+        "5",
+        "2"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Bob Smith",
+      "username": "bob_codes",
+      "bio": "Full Stack Developer | Node.js Expert | Tech Blogger",
+      "followers": [
+        "3",
+        "5",
+        "1"
+      ],
+      "following": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Charlie Brown",
+      "username": "charlie_b",
+      "bio": "UI/UX Designer | Creative Thinker | Design Systems Advocate",
+      "followers": [
+        "2"
+      ],
+      "following": [
+        "1",
+        "2",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Diana Prince",
+      "username": "diana_dev",
+      "bio": "DevOps Engineer | Cloud Architecture | Kubernetes Ninja",
+      "followers": [
+        "3"
+      ],
+      "following": [
+        "2",
+        "5"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Ethan Hunt",
+      "username": "ethan_h",
+      "bio": "Mobile App Developer | React Native | iOS & Android",
+      "followers": [
+        "2",
+        "4"
+      ],
+      "following": [
+        "1",
+        "3"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "userId": "1",
+      "content": "Just shipped my first React component library! 🚀 It includes custom hooks, styled components, and TypeScript support. Check it out on npm!",
+      "likes": 12,
+      "comments": [
+        {
+          "id": 1762294170094,
+          "userId": "1",
+          "text": "This is Greate",
+          "timestamp": "2025-11-04T22:09:30.094Z",
+          "replies": [
+            {
+              "id": 1762299730094,
+              "userId": "1",
+              "text": "thx",
+              "timestamp": "2025-11-04T23:42:10.094Z",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": 1762294217429,
+          "userId": "1",
+          "text": "This is Great",
+          "timestamp": "2025-11-04T22:10:17.429Z"
+        },
+        {
+          "id": 1762294272431,
+          "userId": "1",
+          "text": "This is Great",
+          "timestamp": "2025-11-04T22:11:12.431Z"
+        },
+        {
+          "id": 1762294701869,
+          "userId": "1",
+          "text": "This is Great",
+          "timestamp": "2025-11-04T22:18:21.869Z"
+        },
+        {
+          "id": 1762294803349,
+          "userId": "1",
+          "text": "This is Great",
+          "timestamp": "2025-11-04T22:20:03.349Z"
+        },
+        {
+          "id": 1762299703922,
+          "userId": "1",
+          "text": "This is Good",
+          "timestamp": "2025-11-04T23:41:43.922Z",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "content": "Loving React ❤️ Just finished building a real-time chat app with Socket.io and Express. The state management with useReducer is so clean!",
+      "likes": 9,
+      "comments": [
+        {
+          "text": "Socket.io is the best! How did you handle reconnections?",
+          "replies": [
+            {
+              "id": 1762303627202,
+              "userId": "1",
+              "text": "Superb",
+              "timestamp": "2025-11-05T00:47:07.202Z",
+              "replies": []
+            }
+          ],
+          "id": "5",
+          "userId": "3",
+          "timestamp": "2025-11-05T12:00:00Z"
+        },
+        {
+          "text": "useReducer > useState for complex state 💯",
+          "replies": [
+            {
+              "id": 1762303718516,
+              "userId": "1",
+              "text": "Test",
+              "timestamp": "2025-11-05T00:48:38.516Z",
+              "replies": []
+            }
+          ],
+          "id": "6",
+          "userId": "4",
+          "timestamp": "2025-11-05T12:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "userId": "3",
+      "content": "New design system is live! 🎨 Spent months working on consistent components, color palettes, and typography scales. Team productivity has increased by 40%!",
+      "likes": 15,
+      "comments": [
+        {
+          "text": "Design systems are game changers! Great work Charlie",
+          "replies": [],
+          "id": "7",
+          "userId": "1",
+          "timestamp": "2025-11-05T13:00:00Z"
+        },
+        {
+          "text": "Would love to see a case study on this",
+          "replies": [],
+          "id": "8",
+          "userId": "2",
+          "timestamp": "2025-11-05T13:15:00Z"
+        },
+        {
+          "text": "The color palette is 🔥🔥🔥",
+          "replies": [],
+          "id": "9",
+          "userId": "4",
+          "timestamp": "2025-11-05T13:30:00Z"
+        },
+        {
+          "text": "40% increase is incredible! How did you measure that?",
+          "replies": [],
+          "id": "10",
+          "userId": "5",
+          "timestamp": "2025-11-05T13:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "userId": "4",
+      "content": "Successfully migrated our entire infrastructure to Kubernetes! 🚢 Deployment times went from 30 minutes to 3 minutes. DevOps for the win!",
+      "likes": 27,
+      "comments": [
+        {
+          "text": "Kubernetes is powerful but complex. Any tips for beginners?",
+          "replies": [],
+          "id": "11",
+          "userId": "1",
+          "timestamp": "2025-11-05T14:00:00Z"
+        },
+        {
+          "text": "That deployment time improvement is insane! 🚀",
+          "replies": [],
+          "id": "12",
+          "userId": "2",
+          "timestamp": "2025-11-05T14:15:00Z"
+        },
+        {
+          "text": "What was your biggest challenge during migration?",
+          "replies": [],
+          "id": "13",
+          "userId": "3",
+          "timestamp": "2025-11-05T14:30:00Z"
+        },
+        {
+          "text": "Hello",
+          "replies": [],
+          "id": "14",
+          "userId": "5",
+          "timestamp": "2025-11-05T14:45:00Z"
+        },
+        {
+          "text": "Great",
+          "replies": [],
+          "id": "15",
+          "userId": "1",
+          "timestamp": "2025-11-05T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "userId": "5",
+      "content": "React Native 0.73 is out! 📱 Loving the new architecture improvements. Just updated my app and the performance gains are noticeable immediately.",
+      "likes": 6,
+      "comments": [
+        {
+          "text": "How's the upgrade process? Any breaking changes?",
+          "replies": [],
+          "id": "16",
+          "userId": "2",
+          "timestamp": "2025-11-05T15:15:00Z"
+        },
+        {
+          "text": "Performance improvements are always welcome! 💪",
+          "replies": [],
+          "id": "17",
+          "userId": "3",
+          "timestamp": "2025-11-05T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "userId": "1",
+      "content": "Pro tip: Use React.memo() wisely!  Don't wrap every component - only use it when you have expensive renders or frequent re-renders. Measure first, optimize second.",
+      "likes": 18,
+      "comments": [
+        {
+          "text": "This! So many people overuse memo without measuring",
+          "replies": [],
+          "id": "18",
+          "userId": "2",
+          "timestamp": "2025-11-05T16:00:00Z"
+        },
+        {
+          "text": "Great advice! Premature optimization is the root of all evil",
+          "replies": [],
+          "id": "19",
+          "userId": "3",
+          "timestamp": "2025-11-05T16:15:00Z"
+        },
+        {
+          "text": "What tools do you recommend for measuring render performance?",
+          "replies": [],
+          "id": "20",
+          "userId": "4",
+          "timestamp": "2025-11-05T16:30:00Z"
+        },
+        {
+          "text": "React DevTools Profiler is your friend! 🛠️",
+          "replies": [],
+          "id": "21",
+          "userId": "5",
+          "timestamp": "2025-11-05T16:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "userId": "2",
+      "content": "Building APIs with Express.js and loving the simplicity! 🛠️ Just added rate limiting, CORS, and JWT authentication. Security first approach always pays off.",
+      "likes": 7,
+      "comments": [
+        {
+          "id": 1762303996090,
+          "userId": "1",
+          "text": "Java",
+          "timestamp": "2025-11-05T00:53:16.090Z",
+          "replies": [
+            {
+              "id": 1762304002820,
+              "userId": "1",
+              "text": "Code",
+              "timestamp": "2025-11-05T00:53:22.820Z",
+              "replies": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "userId": "3",
+      "content": "Figma to code workflow is getting smoother every day! 🎯 Using design tokens and auto-layout makes the handoff between design and development seamless.",
+      "likes": 11,
+      "comments": [
+        {
+          "text": "Design tokens are revolutionary! No more guessing colors",
+          "replies": [],
+          "id": "26",
+          "userId": "1",
+          "timestamp": "2025-11-05T18:00:00Z"
+        },
+        {
+          "text": "How do you handle responsive design in this workflow?",
+          "replies": [],
+          "id": "27",
+          "userId": "2",
+          "timestamp": "2025-11-05T18:15:00Z"
+        },
+        {
+          "text": "Figma's dev mode is a game changer 🙌",
+          "replies": [],
+          "id": "28",
+          "userId": "4",
+          "timestamp": "2025-11-05T18:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "userId": "4",
+      "content": "Docker containers everywhere! 🐳 Just containerized our entire development environment. New developers can now get up and running in 5 minutes instead of 2 days!",
+      "likes": 13,
+      "comments": [
+        {
+          "text": "Docker compose makes dev environments so consistent",
+          "replies": [
+            {
+              "id": 1762304354974,
+              "userId": "1",
+              "text": "Test",
+              "timestamp": "2025-11-05T00:59:14.974Z",
+              "replies": [
+                {
+                  "id": 1762304359480,
+                  "userId": "1",
+                  "text": "Test",
+                  "timestamp": "2025-11-05T00:59:19.480Z",
+                  "replies": [
+                    {
+                      "id": 1762304364527,
+                      "userId": "1",
+                      "text": "Test",
+                      "timestamp": "2025-11-05T00:59:24.527Z",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "id": "29",
+          "userId": "1",
+          "timestamp": "2025-11-05T19:00:00Z"
+        },
+        {
+          "text": "2 days to 5 minutes?! That's incredible productivity boost",
+          "replies": [],
+          "id": "30",
+          "userId": "2",
+          "timestamp": "2025-11-05T19:15:00Z"
+        },
+        {
+          "text": "What's in your docker-compose.yml? Would love to see the setup",
+          "replies": [],
+          "id": "31",
+          "userId": "3",
+          "timestamp": "2025-11-05T19:30:00Z"
+        },
+        {
+          "text": "Great",
+          "replies": [],
+          "id": "32",
+          "userId": "5",
+          "timestamp": "2025-11-05T19:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "userId": "5",
+      "content": "Cross-platform development with React Native is amazing! 📱💻 Same codebase running on iOS, Android, and now even Web with React Native Web. One team, multiple platforms! 🚀",
+      "likes": 10,
+      "comments": [
+        {
+          "id": 1762304052604,
+          "userId": "1",
+          "text": "Whatapp",
+          "timestamp": "2025-11-05T00:54:12.604Z",
+          "replies": [
+            {
+              "id": 1762304058194,
+              "userId": "1",
+              "text": "Nothing",
+              "timestamp": "2025-11-05T00:54:18.194Z",
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "userId": "2",
+      "message": "Balakrishna liked your post",
+      "timestamp": "2025-11-04T18:30:00Z",
+      "read": false
+    },
+    {
+      "id": "7b0a",
+      "userId": "4",
+      "message": "Alice Johnson liked your post",
+      "timestamp": "2025-11-04T19:53:54.701Z",
+      "read": false
+    },
+    {
+      "id": "d8b4",
+      "userId": "4",
+      "message": "Alice Johnson liked your post",
+      "timestamp": "2025-11-04T19:54:00.120Z",
+      "read": false
+    },
+    {
+      "id": "274a",
+      "userId": "4",
+      "message": "Alice Johnson liked your post",
+      "timestamp": "2025-11-04T19:54:00.496Z",
+      "read": false
+    },
+    {
+      "id": "635d",
+      "userId": "4",
+      "message": "Alice Johnson liked your post",
+      "timestamp": "2025-11-04T19:54:00.821Z",
+      "read": false
+    },
+    {
+      "id": "214d",
+      "userId": "4",
+      "message": "Alice Johnson liked your post",
+      "timestamp": "2025-11-04T19:54:01.045Z",
+      "read": false
+    },
+    {
+      "id": "bf7b",
+      "userId": "4",
+      "message": "Alice Johnson liked your post",
+      "timestamp": "2025-11-04T19:54:01.277Z",
+      "read": false
+    },
+    {
+      "id": "a008",
+      "userId": "4",
+      "message": "Alice Johnson liked your post",
+      "timestamp": "2025-11-04T19:54:01.676Z",
+      "read": false
+    },
+    {
+      "id": "6de0",
+      "userId": "4",
+      "message": "Alice Johnson commented on your post",
+      "timestamp": "2025-11-04T19:54:51.670Z",
+      "read": false
+    },
+    {
+      "id": "79cc",
+      "userId": "4",
+      "message": "Alice Johnson commented on your post",
+      "timestamp": "2025-11-04T19:55:10.292Z",
+      "read": false
+    },
+    {
+      "id": "b0c7",
+      "userId": "2",
+      "message": "Alice Johnson commented on your post",
+      "timestamp": "2025-11-04T19:55:32.138Z",
+      "read": false
+    },
+    {
+      "id": "dc8a",
+      "userId": "2",
+      "message": "Alice Johnson has followed you",
+      "timestamp": "2025-11-04T19:55:51.899Z",
+      "read": false
+    },
+    {
+      "id": "9490",
+      "userId": "2",
+      "message": "Alice Johnson has followed you",
+      "timestamp": "2025-11-04T19:55:56.377Z",
+      "read": false
+    },
+    {
+      "id": "145e",
+      "userId": "4",
+      "message": "Alice Johnson has unfollowed you",
+      "timestamp": "2025-11-04T20:07:27.478Z",
+      "read": false
+    },
+    {
+      "id": "0c5a",
+      "userId": "2",
+      "message": "Alice Johnson liked your post",
+      "timestamp": "2025-11-04T21:58:39.090Z",
+      "read": false
+    }
+  ]
+}
