@@ -129,6 +129,19 @@ function reducer(state, action) {
                         : user
                 ),
             };
+
+        case 'SET_POST_ERROR':
+            return {
+                ...state,
+                error: action.payload.error,
+            };
+
+        case 'REMOVE_POST_ERROR':
+            return {
+                ...state,
+                error: null,
+            };
+            
         default:
             return state;
     }
